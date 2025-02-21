@@ -14,7 +14,7 @@ with Diagram("Message Collecting", show=False):
          IotCore("core3")] >> pubsub
 
     with Cluster("Targets"):
-        with Cluster("Data Flow"):
+        with Cluster("Dataflow"):
             flow = Dataflow("data flow")
 
         with Cluster("Data Lake"):
